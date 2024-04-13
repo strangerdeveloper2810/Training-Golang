@@ -41,10 +41,10 @@ func main() {
 
 ```
 
-###### h5 Giá trị của biến fullName sẽ trả về là **Trinh Developer**, còn fullNameOrigin sẽ là **James May**.
+## Giá trị của biến fullName sẽ trả về là **Trinh Developer**, còn fullNameOrigin sẽ là **James May**.
 
-###### h5 Vì trong receiver function getFullName(), chúng ta **đang thực hiện trên bản sao** của đối tượng **Stundent**. Khi chúng ta truyền tham số với từ khoá **stunded** vào receiver function, một bản sao của đối tượng gốc được tạo ra và các thay đổi được thực hiện trên bản sao này. Điều này không ảnh hướng đến đối tượng gốc mà bạn đã khởi tạo cho hàm main().
+## Vì trong receiver function getFullName(), chúng ta **đang thực hiện trên bản sao** của đối tượng **Stundent**. Khi chúng ta truyền tham số với từ khoá **stunded** vào receiver function, một bản sao của đối tượng gốc được tạo ra và các thay đổi được thực hiện trên bản sao này. Điều này không ảnh hướng đến đối tượng gốc mà bạn đã khởi tạo cho hàm main().
 
-###### h5 Để thực sự thay đổi giá trị của đối tượng gốc, chúng ta cần truyền đối trượng **dưới dạng con trỏ(\*)**. Khi chúng ta truyền con trỏ, receiver function sẽ tham chiếu đến đối tượng gốc và các thay đổi sẽ được áp dụng trực tiếp lên đối tượng đó.
+## Để thực sự thay đổi giá trị của đối tượng gốc, chúng ta cần truyền đối trượng **dưới dạng con trỏ(\*)**. Khi chúng ta truyền con trỏ, receiver function sẽ tham chiếu đến đối tượng gốc và các thay đổi sẽ được áp dụng trực tiếp lên đối tượng đó.
 
-###### h5 goroutine khá giống với async await của javascript. Goroutine thường kết hợp với các cơ chế như sync.WaitGroup, channel để đồng bộ hoá các goroutine, còn async await thường kết hợp với promise, Trong Go, quản lý bộ nhớ của goroutine là trách nhiệm của runtime, trong khi trong JavaScript, bạn cần phải quản lý bộ nhớ một cách cẩn thận để tránh memory leaks khi sử dụng async/await trong Node.js hoặc trong các ứng dụng web.
+## goroutine khá giống với async await của javascript. Goroutine thường kết hợp với các cơ chế như sync.WaitGroup, channel để đồng bộ hoá các goroutine, còn async await thường kết hợp với promise, Trong Go, quản lý bộ nhớ của goroutine là trách nhiệm của runtime, trong khi trong JavaScript, bạn cần phải quản lý bộ nhớ một cách cẩn thận để tránh memory leaks khi sử dụng async/await trong Node.js hoặc trong các ứng dụng web.
